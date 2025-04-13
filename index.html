@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    #linha{
-        width: 100%;
-        border-bottom: 1px solid #000000;
+  </head>
+  <style>
+    * {
+      margin: 10;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: ´outfit´, sans-serif;
     }
-    .logo_meio{
-        display: flex;
+    body {
+      background-color: #e9f0fe;
     }
-    .logo_meio.img
-</style>
-<body>
+    .logo_meio {
+      display: flex;
+    }
+    .logo_meio,
+    img {
+      width: 80px;
+    }
+    .faq {
+      width: 100%;
+      display: flex;
+    }
+    .faq li {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .faq li label {
+      padding: 15px 10px;
+      font-size: 18px;
+      background-color: bisque;
+      display: flex;
+      cursor: pointer;
+    }
+    .faq input[type="radio"] {
+      display: none;
+    }
+    .faq .resposta {
+      padding: 10px 15px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: cyan;
+      margin-bottom: 10px;
+      transition: max-height .5s, padiding .5s;
+    }
+    .faq input[type=radio]:checked + label + .resposta{
+      max-height: 300px;
+      padding: 10px;
+    }
+    .faq li label::before{
+      content: '+';
+      margin: 0 10px;
+    }
+    .faq input[type=radio]:checked + label::before{
+      content: '-';
+    }
+  </style>
+  <body>
     <div>
-        <img src="/assests/logo_nome.png" alt="logo" id="logo_inicial" width="100px">
-        <h1>Sell ibkine with Shopify</h1>
-        <h3>Trusted by millions of businessses wordlwide</h3>
-        <form >
-            <input type="text" placeholder="Digite seu email aqui...">
-            <input type="button" value="Start free trial">
-        </form>
-        <p>Try Shopity free for 14 days, no credit card requerid. By entering your email, you agree to receive marketing emails from Shopity</p>
-        <img src="/assests/carrinho_de_venda.png" alt="">
+      <img
+        src="/assests/logo_nome.png"
+        alt="logo"
+        id="logo_inicial"
+        width="100px"
+      />
+      <h1>Sell ibkine with Shopify</h1>
+      <h3>Trusted by millions of businessses wordlwide</h3>
+      <form>
+        <input type="text" placeholder="Digite seu email aqui..." />
+        <input type="button" value="Start free trial" />
+      </form>
+      <p>
+        Try Shopity free for 14 days, no credit card requerid. By entering your
+        email, you agree to receive marketing emails from Shopity
+      </p>
+      <img src="/assests/carrinho_de_venda.png" alt="" />
     </div>
     <div>
-        <img src="/assests/icon1.png" alt="">
-        <h3>Customizable Templates</h3>
-        <p>fre website designs to launch your store quickly and easily.</p>
+      <img src="/assests/icon1.png" alt="" />
+      <h3>Customizable Templates</h3>
+      <p>fre website designs to launch your store quickly and easily.</p>
     </div>
     <div>
-        <img src="/assests/icon2.png" alt="">
-        <h3>All in one</h3>
-        <p>Shopify takes care of everything from marketing and payments to secure transactions shipping</p>
+      <img src="/assests/icon2.png" alt="" />
+      <h3>All in one</h3>
+      <p>
+        Shopify takes care of everything from marketing and payments to secure
+        transactions shipping
+      </p>
     </div>
     <div>
-        <img src="/assests/icon3.png" alt="">
-        <h3>A safe and efficient platform</h3>
-        <p>Millions of users trust Shopity to manage their online stores</p>
+      <img src="/assests/icon3.png" alt="" />
+      <h3>A safe and efficient platform</h3>
+      <p>Millions of users trust Shopity to manage their online stores</p>
     </div>
-    <div id="linha"></div>
+    <hr />
     <div class="logos_meio">
-        <img src="/assests/logo_ccc.png" alt="">
-        <img src="/assests/logo_nn.png" alt="">
+      <img src="/assests/logo_ccc.png" alt="" />
+      <img src="/assests/logo_nn.png" alt="" />
     </div>
-</body>
+    <hr />
+    <p>
+      "Shopify is better than any other platform we've played with, and we've
+      played with them all."
+    </p>
+    <cite>Jonathon Bayme, CEO OF THEORY</cite>
+    <br /><br />
+    <div class="perguntas">
+      <h1>FAQ´s</h1>
+      <ul class="faq">
+        <li>
+          <input type="radio" name="acordeon" id="primeiro" />
+          <label for="primeiro">what is Shopity and how does it worl</label>
+          <div class="resposta">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam
+              aliquam voluptates, adipisci eum fugiat dolorum eligendi quas
+              error ab accusamus fuga quam ullam necessitatibus hic voluptate
+              provident blanditiis tenetur?
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
