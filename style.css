@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ´outfit´, sans-serif;
+}
+
+body {
+    background-color: #e9f0fe;
+    text-align: center;
+}
+
+.topo {
+    background: url(/assests/wave.svg);
+    background-size: cover ;
+    width: 100vw;
+    height: 95vh;
+}
+.logo_meio {
+    display: flex;
+}
+
+.logo_meio,
+img {
+    width: 80px;
+}
+
+.faq {
+    width: 100%;
+}
+
+.faq li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.faq li label {
+    padding: 15px 10px;
+    font-size: 18px;
+    background-color: bisque;
+    display: flex;
+    cursor: pointer;
+}
+
+.faq input[type="radio"] {
+    display: none;
+}
+
+.faq .resposta {
+    padding: 10px 15px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: cyan;
+    margin-bottom: 10px;
+    transition: max-height .5s, padiding .5s;
+}
+
+.faq input[type=radio]:checked+label+.resposta {
+    max-height: 300px;
+    padding: 10px;
+}
+
+.faq li label::after {
+    content: '+';
+    margin: 0 10px;
+}
+
+.faq input[type=radio]:checked+label::after {
+    content: '-';
+}
