@@ -1,70 +1,223 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ´outfit´, sans-serif;
-}
-
-body {
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
     background-color: #e9f0fe;
     text-align: center;
-}
-
-.topo {
-    background: url(/assests/wave.svg);
-    background-size: cover ;
-    width: 100vw;
-    height: 95vh;
-}
-.logo_meio {
+    color: #333;
+  }
+  
+  /* Topo / Header */
+  .topo {
+    background-image: url('/assests/wave.svg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+  
+    color: #e9f0fe;
     display: flex;
-}
-
-.logo_meio,
-img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 2px;
+    line-height: 1.7;
+  }
+  
+  
+  .topo h1 {
+    font-size: 2.5rem;
+  }
+  
+  .topo h3 {
+    font-weight: 100;
+    font-size: 1.4rem;
+  }
+  
+  .topo form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .topo input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .topo input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5c6ac4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .topo input[type="submit"]{
+    background-color:black;
+  }
+  .topo .legenda-1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  
+  }
+  .topo .legenda-1 p{
+    line-height: 1;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+  .topo .carrinho_de_venda{
+    
+    width: 250px;
+    height: 250px;
+    
+  }
+  
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .feature {
+    width: 300px;
+    text-align: left;
+    border: 2px solid red
+  }
+  
+  .feature img {
+    width: 50px;
+    display: block;
+    margin-left: 0;
+  }
+  
+  /* Logos */
+  .logos_meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    background-color: #fff;
+  }
+  
+  .logos_meio img {
     width: 80px;
-}
-
-.faq {
+  }
+  
+  /* Depoimento */
+  .depoimento {
+    padding: 40px 20px;
+    font-style: italic;
+    background-color: #f5f5f5;
+  }
+  
+  .depoimento cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  /* FAQ */
+  .perguntas {
+    padding: 40px 20px;
+  }
+  
+  .perguntas h1 {
+    margin-bottom: 20px;
+  }
+  
+  .faq {
     width: 100%;
-}
-
-.faq li {
-    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .faq li {
     margin-bottom: 10px;
-}
-
-.faq li label {
-    padding: 15px 10px;
+    list-style: none;
+  }
+  
+  .faq li label {
+    padding: 15px;
     font-size: 18px;
     background-color: bisque;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-}
-
-.faq input[type="radio"] {
+    transition: background 0.3s;
+  }
+  
+  .faq li label:hover {
+    background-color: #ffe2c6;
+  }
+  
+  .faq input[type="radio"] {
     display: none;
-}
-
-.faq .resposta {
-    padding: 10px 15px;
+  }
+  
+  .faq .resposta {
+    padding: 0 15px;
     max-height: 0;
     overflow: hidden;
-    background-color: cyan;
-    margin-bottom: 10px;
-    transition: max-height .5s, padiding .5s;
-}
-
-.faq input[type=radio]:checked+label+.resposta {
+    background-color: #dff9fb;
+    transition: all 0.4s ease;
+  }
+  
+  .faq input[type=radio]:checked + label + .resposta {
     max-height: 300px;
-    padding: 10px;
-}
-
-.faq li label::after {
+    padding: 15px;
+  }
+  
+  /* Ícones + e - no FAQ */
+  .faq li label::after {
     content: '+';
-    margin: 0 10px;
-}
-
-.faq input[type=radio]:checked+label::after {
+    margin-left: auto;
+    font-size: 20px;
+  }
+  
+  .faq input[type=radio]:checked + label::after {
     content: '-';
-}
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .topo {
+      height: auto;
+      padding: 40px 20px;
+    }
+  
+    .topo h1 {
+      font-size: 2rem;
+    }
+  
+    .topo input[type="email"] {
+      width: 80%;
+    }
+  
+    .logos_meio {
+      flex-wrap: wrap;
+    }
+  }
+  

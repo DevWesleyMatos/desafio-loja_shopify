@@ -2,96 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopify Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <div class="topo">
-        <img src="/assests/logo_nome.png" alt="logo" id="logo_inicial" width="100px" />
-        <h1>Sell online with Shopify</h1>
-        <h3>Trusted by millions of businessses wordlwide</h3>
-        <form>
-            <input type="text" placeholder="Digite seu email aqui..." />
-            <input type="button" value="Start free trial" />
-        </form>
-        <p>
-            Try Shopity free for 14 days, no credit card requerid. By entering your email, you agree to receive marketing emails from Shopity
-        </p>
-        <img src="/assests/carrinho_de_venda.png" alt="" />
-    </div>
-    <div>
-        <img src="/assests/icon1.png" alt="" />
-        <h3>Customizable Templates</h3>
-        <p>fre website designs to launch your store quickly and easily.</p>
-    </div>
-    <div>
-        <img src="/assests/icon2.png" alt="" />
-        <h3>All in one</h3>
-        <p>
-            Shopify takes care of everything from marketing and payments to secure transactions shipping
-        </p>
-    </div>
-    <div>
-        <img src="/assests/icon3.png" alt="" />
-        <h3>A safe and efficient platform</h3>
-        <p>Millions of users trust Shopity to manage their online stores</p>
-    </div>
-    <hr />
-    <div class="logos_meio">
-        <img src="/assests/logo_ccc.png" alt="" />
-        <img src="/assests/logo_nn.png" alt="" />
-    </div>
-    <hr />
-    <p>
-        "Shopify is better than any other platform we've played with, and we've played with them all."
+  <header class="topo">
+    <img src="/assests/logo_nome.png" alt="Shopify logo" id="logo_inicial" width="100" />
+    <h1>Sell online with Shopify</h1>
+    <h3>Trusted by millions of businesses worldwide</h3>
+    <form>
+      <input type="email" placeholder="Digite seu email aqui..." required />
+      <input type="submit" value="Start free trial" />
+    </form>
+    <div class="legenda-1">
+      <p>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive</p>
+      <p>marketing emails from Shopify.</p>
     </p>
-    <cite>Jonathon Bayme, CEO OF THEORY</cite>
-    <br /><br />
-    <div class="perguntas">
-        <h1>FAQ´s</h1>
-        <ul class="faq">
-            <li>
-                <input type="radio" name="acordeon" id="primeiro" />
-                <label for="primeiro">what is Shopity and how does it worl</label>
-                <div class="resposta">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam aliquam voluptates, adipisci eum fugiat dolorum eligendi quas error ab accusamus fuga quam ullam necessitatibus hic voluptate provident blanditiis tenetur?
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="acordeon" id="segunda" />
-                <label for="segunda">what is Shopity and how does it worl</label>
-                <div class="resposta">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam aliquam voluptates, adipisci eum fugiat dolorum eligendi quas error ab accusamus fuga quam ullam necessitatibus hic voluptate provident blanditiis tenetur?
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="acordeon" id="terceiro" />
-                <label for="terceiro">what is Shopity and how does it worl</label>
-                <div class="resposta">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam aliquam voluptates, adipisci eum fugiat dolorum eligendi quas error ab accusamus fuga quam ullam necessitatibus hic voluptate provident blanditiis tenetur?
-                    </p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name="acordeon" id="quarto" />
-                <label for="quarto">what is Shopity and how does it worl</label>
-                <div class="resposta">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam aliquam voluptates, adipisci eum fugiat dolorum eligendi quas error ab accusamus fuga quam ullam necessitatibus hic voluptate provident blanditiis tenetur?
-                    </p>
-                </div>
-            </li>
-        </ul>
+  </div>
+    <img src="/assests/carrinho_de_venda.png" alt="Carrinho de vendas" class="carrinho_de_venda"/>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <img src="/assests/icon1.png" alt="" />
+      <h3>Customizable Templates</h3>
+      <p>Free website designs to launch your store quickly and easily.</p>
     </div>
+    <div class="feature">
+      <img src="/assests/icon2.png" alt="" />
+      <h3>All in one</h3>
+      <p>Shopify takes care of everything from marketing and payments to secure transactions and shipping.</p>
+    </div>
+    <div class="feature">
+      <img src="/assests/icon3.png" alt="" />
+      <h3>A safe and efficient platform</h3>
+      <p>Millions of users trust Shopify to manage their online stores.</p>
+    </div>
+  </section>
+
+  <section class="logos_meio">
+    <hr />
+    <img src="/assests/logo_ccc.png" alt="Logo CCC" />
+    <img src="/assests/logo_nn.png" alt="Logo NN" />
+    <hr />
+  </section>
+
+  <section class="depoimento">
+    <p>
+      "Shopify is better than any other platform we've played with, and we've played with them all."
+    </p>
+    <cite>— Jonathon Bayme, CEO OF THEORY</cite>
+  </section>
+
+  <section class="perguntas">
+    <h1>FAQs</h1>
+    <ul class="faq">
+      <li>
+        <input type="radio" name="acordeon" id="primeiro" />
+        <label for="primeiro">What is Shopify and how does it work?</label>
+        <div class="resposta">
+          <p>Shopify is an e-commerce platform that allows anyone to set up an online store and sell their products.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="acordeon" id="segundo" />
+        <label for="segundo">Is Shopify good for beginners?</label>
+        <div class="resposta">
+          <p>Yes, Shopify is designed to be user-friendly and intuitive, even for those without technical skills.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="acordeon" id="terceiro" />
+        <label for="terceiro">Can I use my own domain with Shopify?</label>
+        <div class="resposta">
+          <p>Absolutely! You can buy a domain through Shopify or connect one you already own.</p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="acordeon" id="quarto" />
+        <label for="quarto">How much does Shopify cost?</label>
+        <div class="resposta">
+          <p>Shopify offers different pricing plans depending on your needs, starting with a free trial.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>
