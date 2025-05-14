@@ -9,7 +9,7 @@
     text-align: center;
   }
   .topo {
-    background-image: url('/assests/wave.svg');
+    background-image: url('./assests/wave.svg');
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
